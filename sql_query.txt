@@ -1,0 +1,22 @@
+// 1st query
+
+select p.name AS name, SUM(t.total) AS total_price  from transactions t
+JOIN items i ON i.id = t.item_id
+JOIN persons p ON p.id = t.person_id
+GROUP BY p.name;
+
+//2nd query
+
+select t.*, p.name, i.name from transactions t
+JOIN items i ON i.id = t.item_id
+JOIN persons p ON p.id = t.person_id
+WHERE t.date BETWEEN #01/01/2020# AND #06/25/2020#;
+
+//3rd query
+
+select p.name from transactions t
+JOIN items i ON i.id = t.item_id
+JOIN persons p ON p.id = t.person_id
+ORDER BY t.total DESC;
+
+

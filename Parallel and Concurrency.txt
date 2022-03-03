@@ -1,0 +1,7 @@
+Parallel and Concurrency
+
+Parallelism is when multiple tasks was running at the same time using a different processor. So if there were 2 tasks: task A and task B, and there were 2 processors: processor X and processor Y. With parallelism concept, task A will be solely assigned to processor X and task B will be solely assigned to processor Y.
+
+Concurrency is when a task was started, ran, and completted in overlapping time periods. But there was no tasks were being ran at the same time.
+
+When a hardware has one processing unit or single-core, we may get concurrency but it is impossible to get parallelism.
